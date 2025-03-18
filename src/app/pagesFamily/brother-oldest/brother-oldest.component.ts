@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './brother-oldest.component.html',
   styleUrl: './brother-oldest.component.css'
 })
-export class BrotherOldestComponent {
+export default class BrotherOldestComponent {
 
 }

@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './sister.component.html',
   styleUrl: './sister.component.css'
 })
-export class SisterComponent {
+export default class SisterComponent {
 
 }

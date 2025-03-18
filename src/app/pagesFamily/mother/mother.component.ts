@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './mother.component.html',
   styleUrl: './mother.component.css'
 })
-export class MotherComponent {
+export default class MotherComponent {
 
 }
