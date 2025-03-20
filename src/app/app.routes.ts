@@ -3,8 +3,12 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./app.component').then((m) => m.AppComponent), /* Chat gpt me dijo que de esta manera, why? */
-    pathMatch: 'full',
+    redirectTo: "/alexander",
+    pathMatch: 'full', //Se deberia de autilizar solo, pero no lo hace
+  },
+  {
+    path: 'alexander',
+    loadComponent: () => import('./pagesFamily/i-alexander/i-alexander.component')
   },
   {
     path: 'brother-in-law',
