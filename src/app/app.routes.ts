@@ -3,8 +3,16 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: "/alexander",
+    redirectTo: "/principal",
     pathMatch: 'full', //Se deberia de autilizar solo, pero no lo hace
+  },
+  {
+    path: 'navegacion',
+    loadComponent: () => import('./pagesFamily/nav/nav.component')
+  },
+  {
+    path: 'principal',
+    loadComponent: () => import('./pagesFamily/principal/principal.component')
   },
   {
     path: 'alexander',
